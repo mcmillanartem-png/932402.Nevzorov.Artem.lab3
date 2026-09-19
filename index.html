@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футуролог и Концепт-Художник</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1, h2, h3 {
+            font-family: var(--font-headings, 'Courier New', Courier, monospace);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-outline">Невзоров Артем</h1>
+        <p>Футуролог и Концепт-Художник</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="nav-list">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#tech-cards">Технологии будущего</a></li>
+            <li><a href="#grid-dashboard">Прогнозы по сферам</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2>Технология будущего</h2>
+        <p>Квантовый Интернет: технология, которая изменит мир.</p>
+    </aside>
+
+    <main id="about">
+        <div class="image-wrapper">
+            <img src="avatar.jpg"
+                 alt="Концепт-арт города будущего" 
+                 width="300" height="200"
+                 class="responsive-img">
+        </div>
+
+        <section class="card">
+            <span class="card-id">01</span>
+            <h2>Навыки прогнозирования</h2>
+            <ul>
+                <li>Создание концепт-артов</li>
+                <li>Сценарное планирование</li>
+                <li>Работа с трендами</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <span class="card-id">02</span>
+            <h2>Футуристические концепты</h2>
+            <ol>
+                <li>Города будущего</li>
+                <li>Новые технологии</li>
+                <li>Космические колонии</li>
+            </ol>
+        </section>
+
+        <section id="tech-cards" class="content-section">
+            <h2>Технологии будущего</h2>
+            <div class="flex-container">
+                <article class="card flex-card">
+                    <span class="card-id">TECH-1</span>
+                    <h3>Нейроинтерфейсы BCI</h3>
+                    <p>Прямая передача данных между корой головного мозга и облачными нейросетями без физических устройств.</p>
+                    <p class="tech-year">Год прогноза: <time datetime="2032">2032</time></p>
+                </article>
+
+                <article class="card flex-card">
+                    <span class="card-id">TECH-2</span>
+                    <h3>Синтетическая биопечать</h3>
+                    <p>Автоматизированная печать сложных человеческих органов на клеточном уровне без риска отторжения.</p>
+                    <p class="tech-year">Год прогноза: <time datetime="2036">2036</time></p>
+                </article>
+
+                <article class="card flex-card">
+                    <span class="card-id">TECH-3</span>
+                    <h3>Компактный термояд</h3>
+                    <p>Малые распределенные реакторы синтеза, снабжающие энергией отдельные автономные эко-кварталы.</p>
+                    <p class="tech-year">Год прогноза: <time datetime="2042">2042</time></p>
+                </article>
+
+                <article class="card flex-card">
+                    <span class="card-id">TECH-4</span>
+                    <h3>Молекулярная сборка</h3>
+                    <p>Создание любых физических предметов из базового сырья на базе наноассемблеров нового поколения.</p>
+                    <p class="tech-year">Год прогноза: <time datetime="2050">2050</time></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="grid-dashboard" class="content-section">
+            <h2>Прогнозы по сферам</h2>
+            <div class="grid-container">
+                <article class="card grid-card">
+                    <span class="card-id">GRID-1</span>
+                    <h3 class="sphere-title">Кибербезопасность</h3>
+                    <p class="prediction-text">
+                        Полный переход на <strong>постквантовую криптографию</strong> и повсеместная интеграция <em>нейросетевых автономных щитов</em> против кибератак в реальном времени.
+                    </p>
+                    <p class="probability-badge prob-high">Вероятность: <strong>85%</strong></p>
+                </article>
+
+                <article class="card grid-card">
+                    <span class="card-id">GRID-2</span>
+                    <h3 class="sphere-title">Урбанистика</h3>
+                    <p class="prediction-text">
+                        Появление <mark>вертикальных лесных кластеров</mark> и полный запрет ДВС в пользу <em>автономных капсульных магнитных сетей</em>.
+                    </p>
+                    <p class="probability-badge prob-med">Вероятность: <strong>65%</strong></p>
+                </article>
+
+                <article class="card grid-card">
+                    <span class="card-id">GRID-3</span>
+                    <h3 class="sphere-title">Освоение космоса</h3>
+                    <p class="prediction-text">
+                        Постройка первой <strong>орбитальной верфи</strong> на орбите Луны и развертывание <em>промышленных комплексов</em> по добыче гелия-3.
+                    </p>
+                    <p class="probability-badge prob-low">Вероятность: <strong>45%</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacts" class="card">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="POST">
+                <label>Имя:<br>
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </label><br><br>
+                
+                <label>Email:<br>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                </label><br><br>
+                
+                <label>Сообщение:<br>
+                    <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+                </label><br><br>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Невзоров Артем</p>
+        <p><a href="https://cyberpunk.fandom.com" target="_blank" rel="noopener noreferrer">Терминал данных (Внешняя ссылка)</a></p>
+    </footer>
+
+</body>
+</html>
