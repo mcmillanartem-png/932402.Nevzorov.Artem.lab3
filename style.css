@@ -26,7 +26,7 @@ body {
 }
 
 [id] {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
 }
 
 .responsive-img {
@@ -66,7 +66,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px 24px;
+    gap: 12px 20px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -190,19 +190,9 @@ aside {
     margin: 15px 0;
 }
 
-.prediction-text strong {
-    color: #00ffff;
-    font-weight: bold;
-}
-
-.prediction-text em {
-    color: #ffde59;
-    font-style: italic;
-}
-
 .prediction-text mark {
     background-color: #00d4ff;
-    color: #000000;
+    color: #050508;
     padding: 2px 4px;
     border-radius: 2px;
     font-weight: bold;
@@ -327,7 +317,6 @@ footer {
     margin-top: 30px;
 }
 
-
 @media (max-width: 992px) {
     .flex-card {
         flex: 1 1 calc((100% - 20px) / 2);
@@ -344,22 +333,16 @@ footer {
     }
 
     [id] {
-        scroll-margin-top: 180px; 
+        scroll-margin-top: 100px; 
     }
 
     .nav-list {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .nav-list li {
-        width: 100%;
-        text-align: center;
+        gap: 6px 10px;
     }
 
     .nav-list a {
-        display: block;
-        width: 100%;
+        padding: 5px 10px;
+        font-size: 13px;
     }
 
     .flex-card {
